@@ -1,0 +1,22 @@
+import React from 'react';
+import BackgroundImage from './BackgroundImage';
+import CenteredContent from './CenteredContent';
+
+const MyComponent: React.FC = () => {
+  return (
+    <main className="flex overflow-hidden flex-col bg-white">
+      <BackgroundImage src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e912b38ae5a16ba905e5f7855c104700d37668f702c5360950598bb331b7430?placeholderIfAbsent=true&apiKey=63edebe4e9344aca90fd641acc2ab951">
+        <CenteredContent>
+          <img 
+            loading="lazy" 
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/0abeb667fe14dbee13e20814d95cf9f16ee6e2c8a02e4a6363f3a8d634a5015a?placeholderIfAbsent=true&apiKey=63edebe4e9344aca90fd641acc2ab951" 
+            alt="Centered content image" 
+            className="object-contain -mb-7 ml-4 max-w-full aspect-square w-[731px] max-md:mb-2.5" 
+          />
+        </CenteredContent>
+      </BackgroundImage>
+    </main>
+  );
+};
+
+export default MyComponent;
