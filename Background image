@@ -1,0 +1,17 @@
+import React from 'react';
+
+interface BackgroundImageProps {
+  src: string;
+  children: React.ReactNode;
+}
+
+const BackgroundImage: React.FC<BackgroundImageProps> = ({ src, children }) => {
+  return (
+    <div className="flex relative flex-col w-full min-h-[1024px] max-md:max-w-full">
+      <img loading="lazy" src={src} alt="" className="object-cover absolute inset-0 size-full" />
+      {children}
+    </div>
+  );
+};
+
+export default BackgroundImage;
